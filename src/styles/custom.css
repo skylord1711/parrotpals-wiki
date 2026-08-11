@@ -1,0 +1,73 @@
+/* Parrot Pals theme — vibrant parrot gradient: purple → pink → cyan */
+
+:root,
+::backdrop {
+	--sl-color-accent-low: hsl(271, 54%, 22%);
+	--sl-color-accent: hsl(271, 91%, 65%);
+	--sl-color-accent-high: hsl(271, 82%, 89%);
+}
+
+:root[data-theme='light'],
+[data-theme='light'] ::backdrop {
+	--sl-color-accent-high: hsl(271, 80%, 30%);
+	--sl-color-accent: hsl(271, 90%, 60%);
+	--sl-color-accent-low: hsl(271, 88%, 90%);
+}
+
+/* Ambient color glows behind the page */
+:root[data-theme='dark'] body {
+	background-image: radial-gradient(
+			70rem 40rem at 112% -8%,
+			hsl(271 91% 65% / 0.22),
+			transparent 62%
+		),
+		radial-gradient(55rem 34rem at -14% 112%, hsl(187 92% 50% / 0.16), transparent 60%),
+		radial-gradient(42rem 30rem at 60% 120%, hsl(326 92% 58% / 0.10), transparent 62%);
+	background-attachment: fixed;
+}
+
+:root[data-theme='light'] body {
+	background-image: radial-gradient(
+			70rem 40rem at 112% -8%,
+			hsl(271 90% 60% / 0.16),
+			transparent 62%
+		),
+		radial-gradient(55rem 34rem at -14% 112%, hsl(187 90% 50% / 0.14), transparent 60%);
+	background-attachment: fixed;
+}
+
+/* Gradient site title */
+.site-title {
+	background: linear-gradient(90deg, #c084fc, #e879f9 45%, #22d3ee);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+/* Gradient splash hero heading */
+.hero h1 {
+	background: linear-gradient(120deg, #e879f9, #a855f7 38%, #22d3ee);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.hero .tagline {
+	color: var(--sl-color-gray-2);
+}
+
+/* Gradient primary buttons */
+.sl-link-button.primary {
+	background: linear-gradient(135deg, #a855f7 0%, #d946ef 55%, #22d3ee 130%);
+	border-color: transparent;
+	color: var(--sl-color-white);
+}
+.sl-link-button.primary:hover {
+	background: linear-gradient(135deg, #9333ea 0%, #c026d3 55%, #06b6d4 130%);
+	color: var(--sl-color-white);
+}
+
+/* Tint card icons with their accent border color */
+.card .icon {
+	color: var(--sl-card-border);
+}
