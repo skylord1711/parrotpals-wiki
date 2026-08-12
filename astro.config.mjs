@@ -68,7 +68,6 @@ export default defineConfig({
 				{
 					label: 'Progression',
 					items: [
-						{ label: 'Kits', slug: 'progression/kits' },
 						{ label: 'Pets', slug: 'progression/pets' },
 						{ label: 'Prefixes', slug: 'progression/prefixes' },
 					],
