@@ -17,14 +17,38 @@ There are **two ways** in — and both need someone to accept on the other side.
 
 **2. Browse & request to join (you pick a team)**
 
-1. Open the **[Team Browser](/teams/teams/)** with `/team browser` — it lists every team on the server.
-2. Click a team to view it and send a **join request**.
-3. The team leader sees your request in their Join Requests menu (`/team requests`) and must **accept or deny** it.
-4. You're told when it's approved (`member-joined`); if it's denied you get a "join request was denied" message.
+1. Open the **[Team Browser](/teams/teams/)** with `/team browser` — a paginated list of **every team** on the server, showing each team's tag, leader, member count, and description.
+2. Click a team to send a **join request** (or get the "This team is not currently accepting join requests" error if they turned requests off).
+3. The team reviews it in their **Join Requests** menu (`/team requests`) and **accepts or denies** it.
+4. You're told when it's approved; if it's denied you get a "join request was denied" message.
 
-> Note: teams can turn off join requests, so some teams will show as **not accepting requests**. If you get "This team is not currently accepting join requests", they only take invites.
+> **Accepting requests is ON by default** for every new team. Staff+ can toggle it off any time in `/team settings` → **Accepting Requests**. Teams with requests off only take invites.
 
 There's no `/team join <team>` that drops you straight in — every team join goes through an **invite** or an **accepted request**.
+
+## The team menu (`/team`)
+
+`/team` opens the main team menu with one-click access to everything:
+
+| Menu button | What it does |
+| --- | --- |
+| **Members** | View members — left-click to manage their rank, right-click to kick |
+| **Ranks** | View and manage your team's ranks |
+| **Bank** | Open the team bank |
+| **Settings** | Team name, tag, description, color, leader rank name, **Accepting Requests** toggle |
+| **Logs** | View team activity logs |
+| **Join Requests** | Accept/deny players who want to join |
+| **Invite Players** | Invite online players |
+| **Team Browser** | Browse public teams and send join requests |
+| **Leave Team** | Leave your current team |
+| **Create Team** | Create a new team ($25,000) |
+
+### Handling join requests
+
+The **Join Requests** menu (`/team requests`) lists every player asking to join. Anyone with the **invite** permission — or the leader — can open it (the default **Member** rank has invite, so regular members can approve too):
+
+- **Left-click a player → ACCEPT** them into the team.
+- **Right-click a player → DENY** them.
 
 ## Creating a team
 
@@ -77,7 +101,8 @@ Teams share a bank with a **$** (Vault) balance. Members deposit; Staff+ can wit
 | `/team` | Open the team menu |
 | `/team browser` | **Browse all teams and send a join request** |
 | `/team info [player]` | View a team's info (leader, members, balance) |
-| `/team requests` | View pending join requests (Leader/Staff) |
+| `/team ranks` | View your team's ranks |
+| `/team requests` | Open the Join Requests GUI (accept = left-click, deny = right-click) |
 | `/team create <name> <tag>` | Create a team |
 | `/team invite <player>` | Invite a player |
 | `/team accept <player>` | Accept an incoming invite |
