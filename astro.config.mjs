@@ -44,6 +44,7 @@ export default defineConfig({
 					label: 'Economy',
 					items: [
 						{ label: 'Economy Overview', slug: 'economy/overview' },
+						{ label: 'Money Sources', slug: 'economy/money-sources' },
 						{ label: 'Mob Kill Rewards', slug: 'economy/mob-rewards' },
 						{ label: 'Spawner Shop', slug: 'economy/spawner-shop' },
 					{ label: 'Jobs', slug: 'economy/jobs' },
