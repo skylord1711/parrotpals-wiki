@@ -5,6 +5,27 @@ description: Create a team, invite up to 10 members, manage ranks, and use the t
 
 Teams (via **TeamCore**) let you group up with friends, share a bank, and manage ranks. Open the team menu with `/team`.
 
+## Joining a team
+
+There are **two ways** in — and both need someone to accept on the other side. You can't just hop into a team.
+
+**1. Get invited (team picks you)**
+
+1. A member with the invite permission uses `/team invite <player>`.
+2. You get a chat message — click **ACCEPT** or type `/team accept <player>`.
+3. You're in. No approval needed beyond accepting the invite.
+
+**2. Browse & request to join (you pick a team)**
+
+1. Open the **[Team Browser](/teams/teams/)** with `/team browser` — it lists every team on the server.
+2. Click a team to view it and send a **join request**.
+3. The team leader sees your request in their Join Requests menu (`/team requests`) and must **accept or deny** it.
+4. You're told when it's approved (`member-joined`); if it's denied you get a "join request was denied" message.
+
+> Note: teams can turn off join requests, so some teams will show as **not accepting requests**. If you get "This team is not currently accepting join requests", they only take invites.
+
+There's no `/team join <team>` that drops you straight in — every team join goes through an **invite** or an **accepted request**.
+
 ## Creating a team
 
 | Setting | Value |
@@ -54,9 +75,18 @@ Teams share a bank with a **$** (Vault) balance. Members deposit; Staff+ can wit
 | Command | What it does |
 | --- | --- |
 | `/team` | Open the team menu |
-| `/team create <name>` | Create a team |
+| `/team browser` | **Browse all teams and send a join request** |
+| `/team info [player]` | View a team's info (leader, members, balance) |
+| `/team requests` | View pending join requests (Leader/Staff) |
+| `/team create <name> <tag>` | Create a team |
 | `/team invite <player>` | Invite a player |
+| `/team accept <player>` | Accept an incoming invite |
+| `/team deny <player>` | Deny an incoming invite |
+| `/team leave` | Leave your current team |
 | `/team kick <player>` | Kick a player (Staff+) |
+| `/team transfer <player>` | Transfer leadership to a member |
 | `/team bank` | Open the team bank |
 | `/team color` | Change your team color |
 | `/team tag` | Change your team tag |
+| `/team settings` | Team settings (including accepting requests) |
+| `/team chat <message>` | Send a message to your team |
