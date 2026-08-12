@@ -60,6 +60,7 @@ export default defineConfig({
 						{ label: 'Animal Crate', slug: 'crates/animal-crate' },
 						{ label: 'Hostile Mob Crate', slug: 'crates/hostile-mob-crate' },
 						{ label: 'Nametag Crate', slug: 'crates/nametag-crate' },
+						{ label: 'Pet Crate', slug: 'crates/pets-crate' },
 					],
 				},
 				{
