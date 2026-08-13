@@ -49,6 +49,7 @@ export default defineConfig({
 						{ label: 'Spawner Shop', slug: 'economy/spawner-shop' },
 					{ label: 'Jobs', slug: 'economy/jobs' },
 					{ label: 'Server Shop', slug: 'economy/server-shop' },
+					{ label: 'Player Market', slug: 'economy/player-market' },
 					{ label: 'AFK Zone', slug: 'economy/afk-zone' },
 					{ label: 'Bank & Profiles', slug: 'economy/bank-and-profiles' },
 						{ label: 'Quest Shop', slug: 'economy/quest-shop' },
@@ -71,6 +72,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Pets', slug: 'progression/pets' },
 						{ label: 'Prefixes', slug: 'progression/prefixes' },
+						{ label: 'Head Drops', slug: 'progression/head-drops' },
 					],
 				},
 				{

@@ -1,0 +1,59 @@
+---
+title: Player Market
+description: The auction house, player shops and chest shops — buy and sell items with other players using Vault money.
+---
+
+The **player market** is where you buy and sell items **with other players** — instead of the fixed-price [Server Shop](/economy/server-shop/), you set your own prices. Everything runs on Vault money (**$**), and there are **no listing fees**.
+
+It comes in three parts:
+
+| Feature | Command | What it is |
+| --- | --- | --- |
+| **Auction House** | `/ah` | Sell to the whole server. Players can bid on your listing. |
+| **Player Shops** | `/shops` | Your own shop menu where players browse and buy. |
+| **Chest Shops** | shift-right-click a chest | A physical shop block with a hologram. |
+
+## Auction House (`/ah`)
+
+The big marketplace — list an item and any player on the server can buy or bid on it.
+
+- **2 listings** per player at a time.
+- Listings last **5 days (120 hours)**.
+- **Bidding is on** — buyers can place a bid and the highest bidder wins when the time runs out.
+- Buyers buy the **whole listing** (no partial purchases) at the price you set.
+- List an item in your hand with **`/listitem`** (alias `/list`).
+
+## Player Shops (`/shops`)
+
+Your personal shop where players can buy from you directly.
+
+- **2 shops** per player, with **5 items listed** in total across them.
+- Listings last **5 days (120 hours)**.
+- **Restocking is on** — you can top up stock up to **9 stacks** of each item.
+
+## Chest Shops
+
+A physical selling block: place a chest, shift-right-click it to create a shop, set your price, and fill the chest with stock. A **hologram** floats above showing the item, stock and price.
+
+- **2 chest shops** per player.
+- Allowed in the **main world** only (disabled in the nether and end).
+- Buyers click the chest to buy; stock comes straight out of the chest's inventory.
+
+## The Inbox (`/inbox`)
+
+Everything that comes back to you lands in your **inbox**:
+
+- Items that **expired** without selling.
+- Money from **sold** items.
+- Auction wins and offers you missed.
+
+You get a message on join whenever you have unclaimed items or incoming offers.
+
+## Commands
+
+| Command | What it does |
+| --- | --- |
+| `/ah` or `/auction` | Open the auction house |
+| `/listitem` or `/list` | List the item in your hand on the auction house |
+| `/shops` or `/playershops` | Open your player shops |
+| `/inbox` | Claim unclaimed items and money |
